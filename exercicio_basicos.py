@@ -117,6 +117,9 @@ else:
 partes = [f"{qtd}x{nota}" for nota, qtd in notas.items()]
 print("Saque permitido! Notas:", ", ".join(partes))
 
+# DESAFIO
+# Nesse código há um erro, bem simples até. Descubra e me mande uma menasagem
+
 
 
 
