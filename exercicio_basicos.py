@@ -106,15 +106,18 @@ else:
     nota = {}
 
     qtd50, resto = divmod(valor, 50)
-    if qtd50: notas[50] = qtd50
+    if qtd50:
+        nota[50] = qtd50
 
     qtd20, resto = divmod(valor, 20)
-    if qtd20: notas[20] = qtd20
+    if qtd20:
+        nota[20] = qtd20
 
     qtd10, resto = divmod(valor, 10)
-    if qtd10: notas[10] = qtd10
+    if qtd10:
+        nota[10] = qtd10
 # resto aqui será sempre zero por causa da validação
-partes = [f"{qtd}x{nota}" for nota, qtd in notas.items()]
+partes = [f"{qtd}x{nota}" for nota, qtd in nota.items()]
 print("Saque permitido! Notas:", ", ".join(partes))
 
 # DESAFIO
